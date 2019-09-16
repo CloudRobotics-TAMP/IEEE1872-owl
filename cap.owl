@@ -1,0 +1,187 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ieee1872-owl/cap#"
+     xml:base="http://purl.org/ieee1872-owl/cap"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
+    <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/cap">
+        <owl:imports rdf:resource="http://purl.org/ieee1872-owl/sumo-cora"/>
+        <dc:contributor>Elisa Tosello</dc:contributor>
+        <dc:creator>Elisa Tosello</dc:creator>
+        <rdfs:comment>This is the OWL version of the CAPABILITY ontology, which provides the definitions of capability, function, behavior and action. Such definitions shoud extend CORA.</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#actionClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/cap#actionClassifiedBy">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/cap#ActionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#activates -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/cap#activates">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#SituationType"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/cap#Behavior"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#allowsPerforming -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/cap#allowsPerforming">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Capability"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/cap#ActionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#capacityOf -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/cap#capacityOf">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Capability"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Agent"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#hasBehavior -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/cap#hasBehavior">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/cap#Behavior"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#performs -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/cap#performs">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Agent"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#situationClassifiedBy -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/cap#situationClassifiedBy">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Situation"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/cap#SituationType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#triggers -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/cap#triggers">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Behavior"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/cap#ActionType"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#Action -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/cap#Action">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#ActionType -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/cap#ActionType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Concept"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#Behavior -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/cap#Behavior">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#Capability -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/cap#Capability">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Property"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#Situation -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/cap#Situation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/cap#SituationType -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/cap#SituationType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Concept"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+

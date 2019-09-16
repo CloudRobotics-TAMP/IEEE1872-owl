@@ -1,15 +1,20 @@
 <?xml version="1.0"?>
 <rdf:RDF xmlns="http://purl.org/ieee1872-owl/sumo-cora#"
      xml:base="http://purl.org/ieee1872-owl/sumo-cora"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
-     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:dc="http://purl.org/dc/elements/1.1/">
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/sumo-cora">
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/annotation"/>
+        <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
+        <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
+        <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
+
+The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)</dc:rights>
         <rdfs:comment xml:lang="en">This is the OWL implementation of SUMO as used by IEEE 1872-2015. It only includes  a taxonomy of concepts and relations, with some few axioms reggarding disjointness, property characteristics and property ranges/domains. 
 
 We only added propeties and axioms that were needed for IEEE 1872-2015, as well as related concepts/relations when needed. We also added a solution for reifying functions, as well as ternary and quaternary relations. 
@@ -18,11 +23,6 @@ The OWL implementation is an underspecified version of the SUO-KIF implementatio
 
 Concept definitions in natural language and othe clarifications can be found in the  IEEE 1872-2015 standard.</rdfs:comment>
         <rdfs:seeAlso>https://github.com/srfiorini/IEEE1872-owl</rdfs:seeAlso>
-        <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
-        <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
-        <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
-
-The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)</dc:rights>
     </owl:Ontology>
     
 
@@ -192,6 +192,261 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_depth -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_depth">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_function -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_function">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_height -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_height">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_id">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_man_type -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_man_type">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_name">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_width -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_width">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_city -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_city">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_country -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_country">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_description">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_id">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_number -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_number">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_street -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_street">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_zip -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_zip">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#map_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#map_id">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Map"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#map_image -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#map_image">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Map"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#obj_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#obj_id">
+        <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#plan_description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#plan_description">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Plan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#plan_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#plan_id">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Plan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#plan_name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#plan_name">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Plan"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#room_description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#room_description">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#room_floor -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#room_floor">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#room_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#room_id">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#room_number -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#room_number">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Room"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#time_measure_description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#time_measure_description">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#time_measure_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#time_measure_id">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#time_measure_name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#time_measure_name">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -232,6 +487,14 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     
 
 
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Building -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Building">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ieee1872-owl/sumo-cora#CognitiveAgent -->
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#CognitiveAgent">
@@ -248,10 +511,26 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     
 
 
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Concept -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Concept">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ieee1872-owl/sumo-cora#ConstantQuantity -->
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#ConstantQuantity">
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#PhysicalQuantity"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#ContentBearingPhysical -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#ContentBearingPhysical">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Physical"/>
     </owl:Class>
     
 
@@ -317,6 +596,14 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     
 
 
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Icon -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Icon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#ContentBearingPhysical"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ieee1872-owl/sumo-cora#IntentionalProcess -->
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#IntentionalProcess">
@@ -346,6 +633,14 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Making">
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Creation"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#IntentionalProcess"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Map -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Map">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Icon"/>
     </owl:Class>
     
 
@@ -386,6 +681,14 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     
 
 
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Plan -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Plan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Procedure"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ieee1872-owl/sumo-cora#Predicate -->
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Predicate">
@@ -394,10 +697,26 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     
 
 
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Procedure -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Proposition"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ieee1872-owl/sumo-cora#Process -->
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Process">
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Physical"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Property -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Property">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
     </owl:Class>
     
 
@@ -449,6 +768,14 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
     
 
 
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#Room -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Room">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    </owl:Class>
+    
+
+
     <!-- http://purl.org/ieee1872-owl/sumo-cora#SelfConnectedObject -->
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#SelfConnectedObject">
@@ -494,6 +821,14 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
 
     <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#TernaryRelation">
         <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/sumo-cora#TimeDuration -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#TimeDuration">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
     </owl:Class>
     
 
@@ -626,5 +961,5 @@ The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licens
 
 
 
-<!-- Generated by the OWL API (version 4.2.8.20170104-2310) https://github.com/owlcs/owlapi -->
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
 

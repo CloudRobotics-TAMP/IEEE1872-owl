@@ -1,0 +1,308 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://purl.org/ieee1872-owl/action#"
+     xml:base="http://purl.org/ieee1872-owl/action"
+     xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
+    <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/action#">
+        <owl:imports rdf:resource="http://purl.org/ieee1872-owl/cap"/>
+        <owl:imports rdf:resource="http://purl.org/ieee1872-owl/pos"/>
+        <owl:imports rdf:resource="http://purl.org/ieee1872-owl/rparts"/>
+        <dc:contributor>Elisa Tosello</dc:contributor>
+        <dc:creator>Elisa Tosello</dc:creator>
+        <rdfs:comment>This is the OWL version of the ACTION ontology</rdfs:comment>
+    </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/creator -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Object Properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#actionUpperTime -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#actionUpperTime">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#composes -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#composes">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Plan"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#from -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#from">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Move"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/pos#PoseMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#hand -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#hand">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PickUp"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PutDown"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Stack"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Unstack"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/rparts#Gripper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#jointManipulationPosture -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#jointManipulationPosture">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PickUp"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PutDown"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Stack"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Unstack"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/pos#JointMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#jointManipulationPrePosture -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#jointManipulationPrePosture">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PickUp"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PutDown"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Stack"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Unstack"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/pos#JointMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#manipulationMilestonePose -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#manipulationMilestonePose">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PickUp"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Unstack"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/pos#PoseMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#manipulationObject -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#manipulationObject">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PickUp"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PutDown"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Stack"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Unstack"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#manipulationOffset -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#manipulationOffset">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PickUp"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Unstack"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/pos#PoseMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#manipulationReferencePose -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#manipulationReferencePose">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PickUp"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Unstack"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/pos#PoseMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#preManipulationOffset -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#preManipulationOffset">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#PickUp"/>
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/action#Unstack"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/pos#PoseMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#to -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/action#to">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/pos#PoseMeasure"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#action_description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/action#action_description">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#action_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/action#action_id">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#action_name -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/action#action_name">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#action_priority -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/action#action_priority">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#action_type_description -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/action#action_type_description">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#ActionType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#action_type_id -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/action#action_type_id">
+        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/cap#ActionType"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#Move -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/action#Move">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#PickUp -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/action#PickUp">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#PutDown -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/action#PutDown">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#Stack -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/action#Stack">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#TypeManipulationAction -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/action#TypeManipulationAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/cap#ActionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#TypeMoveAction -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/action#TypeMoveAction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/cap#ActionType"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/ieee1872-owl/action#Unstack -->
+
+    <owl:Class rdf:about="http://purl.org/ieee1872-owl/action#Unstack">
+        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/cap#Action"/>
+    </owl:Class>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 4.5.9.2019-02-01T07:24:44Z) https://github.com/owlcs/owlapi -->
+
