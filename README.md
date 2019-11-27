@@ -21,23 +21,7 @@ We modularized the ontologies in different levels of axiomatization. The ontolog
 
 # Access
 
-All ontologies can be accessed through the "http://purl.org/ieee1872-owl" prefix:
+RTASK ontology can be accessed through the "http://purl.org/rtask" prefix:
 
-* http://purl.org/ieee1872-owl/cora-bare
-* http://purl.org/ieee1872-owl/sumo-cora
-* http://purl.org/ieee1872-owl/cora
-* http://purl.org/ieee1872-owl/cora-fullaxiom
-* http://purl.org/ieee1872-owl/rtask
-* http://purl.org/ieee1872-owl/corax
-* http://purl.org/ieee1872-owl/rparts
-* http://purl.org/ieee1872-owl/pos
-* http://purl.org/ieee1872-owl/cap
-* http://purl.org/ieee1872-owl/task
-* http://purl.org/ieee1872-owl/action
-* http://purl.org/ieee1872-owl/annotation
-
-
-# Bibliography
-
-* E. Tosello, L. Tagliapietra, Z. Fan, A. Gatto Castro, E. Pagello. "RTASK: A Cloudbased Knwoledge Engine for Robot Task and Motion Planning". Fields of Robotics, Journal of. 2018. 
+* http://purl.org/rtask/rtask
 
