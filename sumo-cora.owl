@@ -8,8 +8,7 @@
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
-    <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/sumo-cora">
-        <owl:imports rdf:resource="http://purl.org/ieee1872-owl/annotation"/>
+    <owl:Ontology rdf:about="http://purl.org/rtask/sumo-cora">
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
         <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
         <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
@@ -30,6 +29,29 @@ Concept definitions in natural language and othe clarifications can be found in 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/contributor -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/contributor"/>
+    
+
+
+    <!-- http://purl.org/dc/elements/1.1/rights -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/rights"/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Object Properties
     //
     ///////////////////////////////////////////////////////////////////////////////////////
@@ -38,153 +60,153 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
-    <!-- http://purl.org/ieee1872-owl/pos#_instance -->
+    <!-- http://purl.org/rtask/pos#_instance -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/pos#_instance">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Relation"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/pos#_instance">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#_Relation"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Relation"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_domain -->
+    <!-- http://purl.org/rtask/sumo-cora#_domain -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_domain">
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#_domain">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Relation"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_domain1 -->
+    <!-- http://purl.org/rtask/sumo-cora#_domain1 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_domain1">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#_domain1">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#_domain"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_domain2 -->
+    <!-- http://purl.org/rtask/sumo-cora#_domain2 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_domain2">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#_domain2">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#_domain"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_domain3 -->
+    <!-- http://purl.org/rtask/sumo-cora#_domain3 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_domain3">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#_domain3">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#_domain"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_domain4 -->
+    <!-- http://purl.org/rtask/sumo-cora#_domain4 -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_domain4">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_domain"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#_domain4">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#_domain"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_range -->
+    <!-- http://purl.org/rtask/sumo-cora#_range -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_range">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Function"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#_range">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#_Function"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#agent -->
+    <!-- http://purl.org/rtask/sumo-cora#agent -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#agent">
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#agent">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Agent"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#causes -->
+    <!-- http://purl.org/rtask/sumo-cora#causes -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#causes">
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#causes">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topObjectProperty"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#located -->
+    <!-- http://purl.org/rtask/sumo-cora#located -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#located">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#partlyLocated"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#located">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#partlyLocated"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#TransitiveProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#measure -->
+    <!-- http://purl.org/rtask/sumo-cora#measure -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#measure">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#PhysicalQuantity"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#measure">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#PhysicalQuantity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#member -->
+    <!-- http://purl.org/rtask/sumo-cora#member -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#member">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#part"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#member">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#part"/>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#part -->
+    <!-- http://purl.org/rtask/sumo-cora#part -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#part"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#part"/>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#partlyLocated -->
+    <!-- http://purl.org/rtask/sumo-cora#partlyLocated -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#partlyLocated">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Physical"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#partlyLocated">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Physical"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#patient -->
+    <!-- http://purl.org/rtask/sumo-cora#patient -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#patient">
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#patient">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#result -->
+    <!-- http://purl.org/rtask/sumo-cora#result -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#result">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#patient"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#result">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#patient"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#time -->
+    <!-- http://purl.org/rtask/sumo-cora#time -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#time">
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/sumo-cora#time">
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AsymmetricProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Physical"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimePosition"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Physical"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#TimePosition"/>
     </owl:ObjectProperty>
     
 
@@ -200,245 +222,245 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_depth -->
+    <!-- http://purl.org/rtask/sumo-cora#artifact_depth -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_depth">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#artifact_depth">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_function -->
+    <!-- http://purl.org/rtask/sumo-cora#artifact_function -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_function">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#artifact_function">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_height -->
+    <!-- http://purl.org/rtask/sumo-cora#artifact_height -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_height">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#artifact_height">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_id -->
+    <!-- http://purl.org/rtask/sumo-cora#artifact_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#artifact_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_man_type -->
+    <!-- http://purl.org/rtask/sumo-cora#artifact_man_type -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_man_type">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#artifact_man_type">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_name -->
+    <!-- http://purl.org/rtask/sumo-cora#artifact_name -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_name">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#artifact_name">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#artifact_width -->
+    <!-- http://purl.org/rtask/sumo-cora#artifact_width -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#artifact_width">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#artifact_width">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_city -->
+    <!-- http://purl.org/rtask/sumo-cora#building_city -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_city">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#building_city">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_country -->
+    <!-- http://purl.org/rtask/sumo-cora#building_country -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_country">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#building_country">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_description -->
+    <!-- http://purl.org/rtask/sumo-cora#building_description -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_description">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#building_description">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_id -->
+    <!-- http://purl.org/rtask/sumo-cora#building_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#building_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_number -->
+    <!-- http://purl.org/rtask/sumo-cora#building_number -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_number">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#building_number">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_street -->
+    <!-- http://purl.org/rtask/sumo-cora#building_street -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_street">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#building_street">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#building_zip -->
+    <!-- http://purl.org/rtask/sumo-cora#building_zip -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#building_zip">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#building_zip">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Building"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#map_id -->
+    <!-- http://purl.org/rtask/sumo-cora#map_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#map_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Map"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#map_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Map"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#map_image -->
+    <!-- http://purl.org/rtask/sumo-cora#map_image -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#map_image">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Map"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#map_image">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Map"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#byte"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#obj_id -->
+    <!-- http://purl.org/rtask/sumo-cora#obj_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#obj_id">
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#obj_id">
         <rdfs:subPropertyOf rdf:resource="http://www.w3.org/2002/07/owl#topDataProperty"/>
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#plan_description -->
+    <!-- http://purl.org/rtask/sumo-cora#plan_description -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#plan_description">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Plan"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#plan_description">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Plan"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#plan_id -->
+    <!-- http://purl.org/rtask/sumo-cora#plan_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#plan_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Plan"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#plan_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Plan"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#plan_name -->
+    <!-- http://purl.org/rtask/sumo-cora#plan_name -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#plan_name">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Plan"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#plan_name">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Plan"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#room_description -->
+    <!-- http://purl.org/rtask/sumo-cora#room_description -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#room_description">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Room"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#room_description">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Room"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#room_floor -->
+    <!-- http://purl.org/rtask/sumo-cora#room_floor -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#room_floor">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Room"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#room_floor">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Room"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#room_id -->
+    <!-- http://purl.org/rtask/sumo-cora#room_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#room_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Room"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#room_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Room"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#room_number -->
+    <!-- http://purl.org/rtask/sumo-cora#room_number -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#room_number">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Room"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#room_number">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Room"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#time_measure_description -->
+    <!-- http://purl.org/rtask/sumo-cora#time_measure_description -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#time_measure_description">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#time_measure_description">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#TimeMeasure"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#time_measure_id -->
+    <!-- http://purl.org/rtask/sumo-cora#time_measure_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#time_measure_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#time_measure_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#TimeMeasure"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#time_measure_name -->
+    <!-- http://purl.org/rtask/sumo-cora#time_measure_name -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/sumo-cora#time_measure_name">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#time_measure_name">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#TimeMeasure"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
@@ -455,478 +477,500 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Abstract -->
+    <!-- http://purl.org/rtask/sumo-cora#Abstract -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Abstract">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Abstract">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Agent -->
+    <!-- http://purl.org/rtask/sumo-cora#Agent -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Agent">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Agent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Artifact -->
+    <!-- http://purl.org/rtask/sumo-cora#Artifact -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Artifact">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#CorpuscularObject"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Artifact">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#CorpuscularObject"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Attribute -->
+    <!-- http://purl.org/rtask/sumo-cora#Attribute -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Attribute">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Attribute">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Building -->
+    <!-- http://purl.org/rtask/sumo-cora#Building -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Building">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Building">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#CognitiveAgent -->
+    <!-- http://purl.org/rtask/sumo-cora#CognitiveAgent -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#CognitiveAgent">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SentientAgent"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#CognitiveAgent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#SentientAgent"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Collection -->
+    <!-- http://purl.org/rtask/sumo-cora#Collection -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Collection">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Collection">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Concept -->
+    <!-- http://purl.org/rtask/sumo-cora#Concept -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Concept">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Concept">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#ConstantQuantity -->
+    <!-- http://purl.org/rtask/sumo-cora#ConstantQuantity -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#ConstantQuantity">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#PhysicalQuantity"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#ConstantQuantity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#PhysicalQuantity"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#ContentBearingPhysical -->
+    <!-- http://purl.org/rtask/sumo-cora#ContentBearingPhysical -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#ContentBearingPhysical">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Physical"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#ContentBearingPhysical">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Physical"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#CorpuscularObject -->
+    <!-- http://purl.org/rtask/sumo-cora#CorpuscularObject -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#CorpuscularObject">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SelfConnectedObject"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#CorpuscularObject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#SelfConnectedObject"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Creation -->
+    <!-- http://purl.org/rtask/sumo-cora#Creation -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Creation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#InternalChange"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Creation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#InternalChange"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Device -->
+    <!-- http://purl.org/rtask/sumo-cora#Device -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Device">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Artifact"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Device">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#ElectricDevice -->
+    <!-- http://purl.org/rtask/sumo-cora#ElectricDevice -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#ElectricDevice">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Device"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#ElectricDevice">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
         <rdfs:comment>This concept is from in SUMO Mid-level.</rdfs:comment>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Entity -->
+    <!-- http://purl.org/rtask/sumo-cora#Entity -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Entity">
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Entity">
         <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Physical"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Abstract"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Physical"/>
         </owl:disjointUnionOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Function -->
+    <!-- http://purl.org/rtask/sumo-cora#Function -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Function">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Function">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#SingleValuedRelation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Group -->
+    <!-- http://purl.org/rtask/sumo-cora#Group -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Group">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Agent"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Collection"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Group">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Agent"/>
+                    <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Collection"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Icon -->
+    <!-- http://purl.org/rtask/sumo-cora#Icon -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Icon">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#ContentBearingPhysical"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Icon">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#ContentBearingPhysical"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#IntentionalProcess -->
+    <!-- http://purl.org/rtask/sumo-cora#IntentionalProcess -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#IntentionalProcess">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#IntentionalProcess">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#InternalChange -->
+    <!-- http://purl.org/rtask/sumo-cora#InternalChange -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#InternalChange">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#InternalChange">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#List -->
+    <!-- http://purl.org/rtask/sumo-cora#List -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#List">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#List">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Relation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Making -->
+    <!-- http://purl.org/rtask/sumo-cora#Making -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Making">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Creation"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#IntentionalProcess"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Making">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Creation"/>
+                    <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#IntentionalProcess"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Map -->
+    <!-- http://purl.org/rtask/sumo-cora#Map -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Map">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Icon"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Map">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Icon"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Motion -->
+    <!-- http://purl.org/rtask/sumo-cora#Motion -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Motion">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Motion">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Object -->
+    <!-- http://purl.org/rtask/sumo-cora#Object -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Object">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Physical"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Object">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Physical"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Physical -->
+    <!-- http://purl.org/rtask/sumo-cora#Physical -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Physical">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Physical">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Object"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Process"/>
         </owl:disjointUnionOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#PhysicalQuantity -->
+    <!-- http://purl.org/rtask/sumo-cora#PhysicalQuantity -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#PhysicalQuantity">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Quantity"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#PhysicalQuantity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Quantity"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Plan -->
+    <!-- http://purl.org/rtask/sumo-cora#Plan -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Plan">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Procedure"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Plan">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Procedure"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Predicate -->
+    <!-- http://purl.org/rtask/sumo-cora#Predicate -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Predicate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Predicate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Relation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Procedure -->
+    <!-- http://purl.org/rtask/sumo-cora#Procedure -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Procedure">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Proposition"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Procedure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Proposition"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Process -->
+    <!-- http://purl.org/rtask/sumo-cora#Process -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Process">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Physical"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Process">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Physical"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Property -->
+    <!-- http://purl.org/rtask/sumo-cora#Property -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Property">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Property">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Proposition -->
+    <!-- http://purl.org/rtask/sumo-cora#Proposition -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Proposition">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Proposition">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Quantity -->
+    <!-- http://purl.org/rtask/sumo-cora#Quantity -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Quantity">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Quantity">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#QuaternaryPredicate -->
+    <!-- http://purl.org/rtask/sumo-cora#QuaternaryPredicate -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#QuaternaryPredicate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Predicate"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#QuaternaryRelation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#QuaternaryPredicate">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Predicate"/>
+                    <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#QuaternaryRelation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#QuaternaryRelation -->
+    <!-- http://purl.org/rtask/sumo-cora#QuaternaryRelation -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#QuaternaryRelation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
-        <owl:disjointWith rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TernaryRelation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#QuaternaryRelation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Relation"/>
+        <owl:disjointWith rdf:resource="http://purl.org/rtask/sumo-cora#TernaryRelation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Relation -->
+    <!-- http://purl.org/rtask/sumo-cora#Relation -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Relation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Relation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
         <owl:disjointUnionOf rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Function"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#List"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Predicate"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Function"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#List"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Predicate"/>
         </owl:disjointUnionOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#Room -->
+    <!-- http://purl.org/rtask/sumo-cora#Room -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Room">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Building"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Room">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Building"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#SelfConnectedObject -->
+    <!-- http://purl.org/rtask/sumo-cora#SelfConnectedObject -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#SelfConnectedObject">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Object"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#SelfConnectedObject">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#SentientAgent -->
+    <!-- http://purl.org/rtask/sumo-cora#SentientAgent -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#SentientAgent">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Agent"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#SentientAgent">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#SetOrClass -->
+    <!-- http://purl.org/rtask/sumo-cora#SetOrClass -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#SetOrClass">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Abstract"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#SetOrClass">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation -->
+    <!-- http://purl.org/rtask/sumo-cora#SingleValuedRelation -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#SingleValuedRelation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#SingleValuedRelation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Relation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#TernaryPredicate -->
+    <!-- http://purl.org/rtask/sumo-cora#TernaryPredicate -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#TernaryPredicate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Predicate"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TernaryRelation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#TernaryPredicate">
+        <rdfs:subClassOf>
+            <owl:Class>
+                <owl:intersectionOf rdf:parseType="Collection">
+                    <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Predicate"/>
+                    <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#TernaryRelation"/>
+                </owl:intersectionOf>
+            </owl:Class>
+        </rdfs:subClassOf>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#TernaryRelation -->
+    <!-- http://purl.org/rtask/sumo-cora#TernaryRelation -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#TernaryRelation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#TernaryRelation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Relation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#TimeDuration -->
+    <!-- http://purl.org/rtask/sumo-cora#TimeDuration -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#TimeDuration">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#TimeDuration">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#TimeMeasure"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure -->
+    <!-- http://purl.org/rtask/sumo-cora#TimeMeasure -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#ConstantQuantity"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#TimeMeasure">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#ConstantQuantity"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#TimePosition -->
+    <!-- http://purl.org/rtask/sumo-cora#TimePosition -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#TimePosition">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#TimePosition">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#TimeMeasure"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#UnaryFunction -->
+    <!-- http://purl.org/rtask/sumo-cora#UnaryFunction -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#UnaryFunction">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Function"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#UnaryFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Function"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_Function -->
+    <!-- http://purl.org/rtask/sumo-cora#_Function -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_Function">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Relation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_Function">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_Relation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_Predicate -->
+    <!-- http://purl.org/rtask/sumo-cora#_Predicate -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_Predicate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Relation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_Predicate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_Relation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_QuaternaryPredicate -->
+    <!-- http://purl.org/rtask/sumo-cora#_QuaternaryPredicate -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_QuaternaryPredicate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Predicate"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_QuaternaryRelation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_QuaternaryPredicate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_Predicate"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_QuaternaryRelation -->
+    <!-- http://purl.org/rtask/sumo-cora#_QuaternaryRelation -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_QuaternaryRelation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Relation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_QuaternaryRelation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_Relation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_Relation -->
+    <!-- http://purl.org/rtask/sumo-cora#_Relation -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_Relation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_VariableAssignment"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_Relation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_VariableAssignment"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate -->
+    <!-- http://purl.org/rtask/sumo-cora#_TernaryPredicate -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_TernaryPredicate">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Predicate"/>
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_TernaryRelation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_TernaryPredicate">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_Predicate"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_TernaryRelation -->
+    <!-- http://purl.org/rtask/sumo-cora#_TernaryRelation -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_TernaryRelation">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Relation"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_TernaryRelation">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_Relation"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_UnaryFunction -->
+    <!-- http://purl.org/rtask/sumo-cora#_UnaryFunction -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_UnaryFunction">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#_Function"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_UnaryFunction">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_Function"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/sumo-cora#_VariableAssignment -->
+    <!-- http://purl.org/rtask/sumo-cora#_VariableAssignment -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/sumo-cora#_VariableAssignment">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Entity"/>
+    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#_VariableAssignment">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
     </owl:Class>
     
 
@@ -942,19 +986,19 @@ Concept definitions in natural language and othe clarifications can be found in 
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Attribute"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Proposition"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Quantity"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Relation"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#SetOrClass"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Attribute"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Proposition"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Quantity"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Relation"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#SetOrClass"/>
         </owl:members>
     </rdf:Description>
     <rdf:Description>
         <rdf:type rdf:resource="http://www.w3.org/2002/07/owl#AllDisjointClasses"/>
         <owl:members rdf:parseType="Collection">
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Function"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#List"/>
-            <rdf:Description rdf:about="http://purl.org/ieee1872-owl/sumo-cora#Predicate"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Function"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#List"/>
+            <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#Predicate"/>
         </owl:members>
     </rdf:Description>
 </rdf:RDF>

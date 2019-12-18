@@ -1,22 +1,34 @@
 <?xml version="1.0" encoding="UTF-8" standalone="no"?>
 <catalog prefer="public" xmlns="urn:oasis:names:tc:entity:xmlns:xml:catalog">
-    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/task#" uri="task.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/action#" uri="action.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/cap" uri="cap.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/annotation" uri="annotation.owl"/>
-    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/annotation" uri="fork_annotation.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/pos" uri="file:/home/elisa/IEEE1872-owl/pos.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/rparts" uri="file:/home/elisa/IEEE1872-owl/rparts.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/sumo-cora" uri="file:/home/elisa/IEEE1872-owl/sumo-cora.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/cora" uri="file:/home/elisa/IEEE1872-owl/cora.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/cap" uri="file:/home/elisa/IEEE1872-owl/cap.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/ieee1872-owl/annotation" uri="file:/home/elisa/IEEE1872-owl/annotation.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/cora" uri="cora.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/corax" uri="corax.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/cora-bare" uri="cora-bare.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/rparts" uri="rparts.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/pos" uri="pos.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/cap" uri="cap.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/sumo-cora" uri="sumo-cora.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/task#" uri="task.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/action#" uri="action.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/cap" uri="cap.owl"/>
+    <uri id="Imports Wizard Entry" name="http://purl.org/rtask/annotation" uri="annotation.owl"/>
     <group id="Folder Repository, directory=, recursive=true, Auto-Update=true, version=2" prefer="public" xml:base="">
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/action" uri="action.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/annotation" uri="annotation.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/cap" uri="cap.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/cora" uri="cora.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/cora-bare" uri="cora-bare.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/cora-fullaxiom" uri="cora-fullaxiom.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/corax" uri="corax.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/pos" uri="pos.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/rparts" uri="rparts.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/rtask" uri="rtask_original.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/sumo-cora" uri="sumo-cora.owl"/>
-        <uri id="Automatically generated entry, Timestamp=1568629198160" name="http://purl.org/ieee1872-owl/task" uri="task.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http:/rtask/purl.org//annotation" uri="annotation.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/action" uri="action.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/cap" uri="cap.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/cora" uri="cora.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/cora-bare" uri="cora-bare.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/cora-fullaxiom" uri="cora-fullaxiom.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/corax" uri="corax.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/pos" uri="pos.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/rparts" uri="rparts.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/rtask" uri="rtask.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/sumo-cora" uri="sumo-cora.owl"/>
+        <uri id="Automatically generated entry, Timestamp=1576690576598" name="http://purl.org/ieee1872-owl/task" uri="task.owl"/>
     </group>
 </catalog>

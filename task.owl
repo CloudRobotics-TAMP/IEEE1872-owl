@@ -7,10 +7,11 @@
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
-    <owl:Ontology rdf:about="http://purl.org/ieee1872-owl/task#">
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
+     xmlns:annotation1="http://purl.org/rtask/annotation#">
+    <owl:Ontology rdf:about="http://purl.org/rtask/task#">
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/annotation"/>
-        <owl:imports rdf:resource="http://purl.org/ieee1872-owl/sumo-cora"/>
+        <owl:imports rdf:resource="http://purl.org/rtask/sumo-cora"/>
         <dc:contributor>Elisa Tosello</dc:contributor>
         <dc:creator>Elisa Tosello</dc:creator>
         <rdfs:comment>This is the OWL version of the TASK ontology</rdfs:comment>
@@ -29,47 +30,47 @@
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#forms -->
+    <!-- http://purl.org/rtask/task#forms -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/task#forms">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/task#Mission"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#forms">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/task#Mission"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#isAssignedTo -->
+    <!-- http://purl.org/rtask/task#isAssignedTo -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/task#isAssignedTo">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Agent"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#isAssignedTo">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#isSpecifiedBy -->
+    <!-- http://purl.org/rtask/task#isSpecifiedBy -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/task#isSpecifiedBy">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Plan"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#isSpecifiedBy">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Plan"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#taskClassifiedBy -->
+    <!-- http://purl.org/rtask/task#taskClassifiedBy -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/task#taskClassifiedBy">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/task#TaskType"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#taskClassifiedBy">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/task#TaskType"/>
     </owl:ObjectProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#taskUpperTime -->
+    <!-- http://purl.org/rtask/task#taskUpperTime -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/ieee1872-owl/task#taskUpperTime">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#TimeMeasure"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#taskUpperTime">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#TimeMeasure"/>
     </owl:ObjectProperty>
     
 
@@ -85,64 +86,64 @@
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#mission_description -->
+    <!-- http://purl.org/rtask/task#mission_description -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#mission_description">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Mission"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#mission_description">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Mission"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#mission_id -->
+    <!-- http://purl.org/rtask/task#mission_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#mission_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Mission"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#mission_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Mission"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#mission_name -->
+    <!-- http://purl.org/rtask/task#mission_name -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#mission_name">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Mission"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#mission_name">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Mission"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#task_description -->
+    <!-- http://purl.org/rtask/task#task_description -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#task_description">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_description">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#task_id -->
+    <!-- http://purl.org/rtask/task#task_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#task_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#task_name -->
+    <!-- http://purl.org/rtask/task#task_name -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#task_name">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_name">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#task_outcome -->
+    <!-- http://purl.org/rtask/task#task_outcome -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#task_outcome">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_outcome">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
         <rdfs:range>
             <rdfs:Datatype>
                 <owl:oneOf>
@@ -176,28 +177,28 @@
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#task_priority -->
+    <!-- http://purl.org/rtask/task#task_priority -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#task_priority">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#Task"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_priority">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#task_type_description -->
+    <!-- http://purl.org/rtask/task#task_type_description -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#task_type_description">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#TaskType"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_type_description">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#TaskType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
     </owl:DatatypeProperty>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#task_type_id -->
+    <!-- http://purl.org/rtask/task#task_type_id -->
 
-    <owl:DatatypeProperty rdf:about="http://purl.org/ieee1872-owl/task#task_type_id">
-        <rdfs:domain rdf:resource="http://purl.org/ieee1872-owl/task#TaskType"/>
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_type_id">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/task#TaskType"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
     </owl:DatatypeProperty>
     
@@ -214,42 +215,42 @@
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#Mission -->
+    <!-- http://purl.org/rtask/task#Mission -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/task#Mission">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
+    <owl:Class rdf:about="http://purl.org/rtask/task#Mission">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#Task -->
+    <!-- http://purl.org/rtask/task#Task -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/task#Task">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Process"/>
+    <owl:Class rdf:about="http://purl.org/rtask/task#Task">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#TaskType -->
+    <!-- http://purl.org/rtask/task#TaskType -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/task#TaskType">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Concept"/>
+    <owl:Class rdf:about="http://purl.org/rtask/task#TaskType">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Concept"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#TypeManipulationTask -->
+    <!-- http://purl.org/rtask/task#TypeManipulationTask -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/task#TypeManipulationTask">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/task#TaskType"/>
+    <owl:Class rdf:about="http://purl.org/rtask/task#TypeManipulationTask">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/task#TaskType"/>
     </owl:Class>
     
 
 
-    <!-- http://purl.org/ieee1872-owl/task#TypeMoveTask -->
+    <!-- http://purl.org/rtask/task#TypeMoveTask -->
 
-    <owl:Class rdf:about="http://purl.org/ieee1872-owl/task#TypeMoveTask">
-        <rdfs:subClassOf rdf:resource="http://purl.org/ieee1872-owl/task#TaskType"/>
+    <owl:Class rdf:about="http://purl.org/rtask/task#TypeMoveTask">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/task#TaskType"/>
     </owl:Class>
 </rdf:RDF>
 
