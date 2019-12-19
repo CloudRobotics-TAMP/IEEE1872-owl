@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ieee1872-owl/corax#"
-     xml:base="http://purl.org/ieee1872-owl/corax"
+<rdf:RDF xmlns="http://purl.org/rtask/corax#"
+     xml:base="http://purl.org/rtask/corax"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
-     xmlns:annotation1="http://purl.org/rtask/annotation#">
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/rtask/corax">
         <owl:imports rdf:resource="http://purl.org/rtask/sumo-cora"/>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
@@ -36,9 +35,9 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
-    <!-- http://purl.org/rtask/annotation#ieee18722015AxiomNumber -->
+    <!-- http://purl.org/ieee1872-owl/annotation#ieee18722015AxiomNumber -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/rtask/annotation#ieee18722015AxiomNumber"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/ieee1872-owl/annotation#ieee18722015AxiomNumber"/>
     
 
 
@@ -64,13 +63,13 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#about"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Proposition"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.9</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.9</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#about"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.10</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.10</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -85,13 +84,13 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#dependsOn"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
-        <annotation1:ieee18722015AxiomNumber>6.2.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.2.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#dependsOn"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
-        <annotation1:ieee18722015AxiomNumber>6.2.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.2.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -108,19 +107,19 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#designAttribute"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/corax#property"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.13</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.13</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#designAttribute"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/corax#DesignObject"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.16</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.16</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#designAttribute"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Attribute"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.17</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.17</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -136,13 +135,13 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#designMeasure"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/corax#DesignObject"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.20</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.20</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#designMeasure"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#PhysicalQuantity"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.21</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.21</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -158,13 +157,13 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#idealizes"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/corax#Design"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#idealizes"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -180,13 +179,13 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#interactsWith"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-        <annotation1:ieee18722015AxiomNumber>6.3.6</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.3.6</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#interactsWith"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-        <annotation1:ieee18722015AxiomNumber>6.3.7</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.3.7</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -220,7 +219,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#ArtificialSystem"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Artifact"/>
-        <annotation1:ieee18722015AxiomNumber>6.4.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.4.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -234,7 +233,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#Design"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Proposition"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -248,7 +247,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#DesignObject"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
-        <annotation1:ieee18722015AxiomNumber>6.1.6</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.6</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -263,7 +262,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#HumanRobotCommunication"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
-        <annotation1:ieee18722015AxiomNumber>6.7.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.7.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -277,7 +276,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#Interaction"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
-        <annotation1:ieee18722015AxiomNumber>6.3.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.3.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -291,7 +290,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#PhysicalEnvironment"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-        <annotation1:ieee18722015AxiomNumber>6.2.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.2.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -305,7 +304,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#ProcessingDevice"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#ElectricDevice"/>
-        <annotation1:ieee18722015AxiomNumber>6.5.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.5.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -319,7 +318,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#RobotMotion"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Motion"/>
-        <annotation1:ieee18722015AxiomNumber>6.6.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.6.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -334,7 +333,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/corax#RobotRobotCommunication"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
-        <annotation1:ieee18722015AxiomNumber>6.8.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.8.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 

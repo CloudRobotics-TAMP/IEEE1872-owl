@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ieee1872-owl/rtask#"
-     xml:base="http://purl.org/ieee1872-owl/rtask"
+<rdf:RDF xmlns="http://purl.org/rtask/rtask#"
+     xml:base="http://purl.org/rtask/rtask"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -10,8 +10,7 @@
      xmlns:rparts="http://purl.org/rtask/rparts#"
      xmlns:cora-bare="http://purl.org/rtask/cora-bare#"
      xmlns:sumo-cora="http://purl.org/rtask/sumo-cora#"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
-     xmlns:annotation1="http://purl.org/rtask/annotation#">
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/rtask/rtask#">
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/annotation"/>
         <owl:imports rdf:resource="http://purl.org/rtask/cap"/>
@@ -515,7 +514,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:onClass rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>7.8.5</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.8.5</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -549,8 +548,8 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:onClass rdf:resource="http://purl.org/rtask/cora-bare#RobotInterface"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>7.3.2</annotation1:ieee18722015AxiomNumber>
-        <annotation1:ieee18722015AxiomNumber>7.3.7</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.3.2</annotation:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.3.7</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -582,7 +581,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:allValuesFrom rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>7.5.2</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.5.2</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -606,7 +605,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/cora-bare#RoboticSystem"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>7.7.6</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.7.6</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -638,7 +637,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>7.6.5</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.6.5</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -672,7 +671,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:onClass rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>7.8.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.8.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -696,7 +695,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/corax#DesignObject"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>6.1.12</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.12</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -728,7 +727,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/corax#Design"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>6.1.11</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>6.1.11</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -752,7 +751,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>9.6.6</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.6.6</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -776,7 +775,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/pos#OrientationCoordinateSystem"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>9.7.10</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.10</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -800,7 +799,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>9.1.6</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.1.6</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -824,7 +823,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/pos#PositionCoordinateSystem"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>9.2.10</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.10</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -848,7 +847,7 @@ Concept definitions in natural language and othe clarifications can be found in 
                 <owl:someValuesFrom rdf:resource="http://purl.org/rtask/sumo-cora#Entity"/>
             </owl:Restriction>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>9.1.6</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.1.6</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 

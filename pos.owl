@@ -1,14 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ieee1872-owl/pos#"
-     xml:base="http://purl.org/ieee1872-owl/pos"
+<rdf:RDF xmlns="http://purl.org/rtask/pos#"
+     xml:base="http://purl.org/rtask/pos"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
-     xmlns:annotation1="http://purl.org/rtask/annotation#">
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/rtask/pos">
         <owl:imports rdf:resource="http://purl.org/rtask/sumo-cora"/>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
@@ -35,9 +34,9 @@ If the full axiomation is important to you, check the fully axiomatized verion o
     
 
 
-    <!-- http://purl.org/rtask/annotation#ieee18722015AxiomNumber -->
+    <!-- http://purl.org/ieee1872-owl/annotation#ieee18722015AxiomNumber -->
 
-    <owl:AnnotationProperty rdf:about="http://purl.org/rtask/annotation#ieee18722015AxiomNumber"/>
+    <owl:AnnotationProperty rdf:about="http://purl.org/ieee1872-owl/annotation#ieee18722015AxiomNumber"/>
     
 
 
@@ -69,13 +68,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#inOCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationValue"/>
-        <annotation1:ieee18722015AxiomNumber>9.7.8</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.8</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#inOCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationCoordinateSystem"/>
-        <annotation1:ieee18722015AxiomNumber>9.7.9</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.9</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -90,13 +89,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#inOPR"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.10.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.10.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#inOPR"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationRegion"/>
-        <annotation1:ieee18722015AxiomNumber>9.10.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.10.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -112,13 +111,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#inPCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionPoint"/>
-        <annotation1:ieee18722015AxiomNumber>9.2.8</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.8</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#inPCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionCoordinateSystem"/>
-        <annotation1:ieee18722015AxiomNumber>9.2.9</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.9</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -133,13 +132,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#inPR"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#inPR"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionRegion"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -155,19 +154,19 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#orientedAt"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-        <annotation1:ieee18722015AxiomNumber>9.7.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#orientedAt"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.7.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#orientedAt"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#measure"/>
-        <annotation1:ieee18722015AxiomNumber>9.7.2</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.2</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -183,13 +182,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#overlapsPosition"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionRegion"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.24</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.24</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#overlapsPosition"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionRegion"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.25</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.25</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -205,13 +204,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#parentOCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationCoordinateSystem"/>
-        <annotation1:ieee18722015AxiomNumber>9.9.15</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.9.15</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#parentOCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationCoordinateSystem"/>
-        <annotation1:ieee18722015AxiomNumber>9.9.16</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.9.16</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -228,13 +227,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#parentPCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionCoordinateSystem"/>
-        <annotation1:ieee18722015AxiomNumber>9.4.16</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.4.16</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#parentPCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionCoordinateSystem"/>
-        <annotation1:ieee18722015AxiomNumber>9.4.17</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.4.17</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -250,19 +249,19 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#pose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#measure"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.2</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.2</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#pose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#pose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -277,13 +276,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#poseOrientation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.11</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.11</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#poseOrientation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.12</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.12</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -299,13 +298,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#posePosition"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.7</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.7</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#posePosition"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.8</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.8</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -321,19 +320,19 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#positionedAt"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#measure"/>
-        <annotation1:ieee18722015AxiomNumber>9.2.2</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.2</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#positionedAt"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-        <annotation1:ieee18722015AxiomNumber>9.2.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#positionedAt"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.2.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -349,13 +348,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#refOCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationCoordinateSystem"/>
-        <annotation1:ieee18722015AxiomNumber>9.6.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.6.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#refOCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-        <annotation1:ieee18722015AxiomNumber>9.6.5</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.6.5</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -371,13 +370,13 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#refPCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionCoordinateSystem"/>
-        <annotation1:ieee18722015AxiomNumber>9.1.4</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.1.4</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#refPCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-        <annotation1:ieee18722015AxiomNumber>9.1.5</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.1.5</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -660,7 +659,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#OrientationCoordinateSystem"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
-        <annotation1:ieee18722015AxiomNumber>9.6.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.6.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -678,7 +677,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#OrientationMeasure"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#PhysicalQuantity"/>
-        <annotation1:ieee18722015AxiomNumber>9.7.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#OrientationMeasure"/>
@@ -687,7 +686,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
             <rdf:Description rdf:about="http://purl.org/rtask/pos#OrientationRegion"/>
             <rdf:Description rdf:about="http://purl.org/rtask/pos#OrientationValue"/>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>9.7.5</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.5</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -701,7 +700,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#OrientationRegion"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.10.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.10.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -715,7 +714,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#OrientationSpatialOperator"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Function"/>
-        <annotation1:ieee18722015AxiomNumber>9.10.6</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.10.6</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -729,7 +728,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#OrientationTransformationFunction"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#UnaryFunction"/>
-        <annotation1:ieee18722015AxiomNumber>9.9.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.9.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -743,7 +742,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#OrientationValue"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#OrientationMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.8.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.8.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -757,7 +756,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#PhysicalQuantity"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -771,7 +770,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#PositionCoordinateSystem"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Abstract"/>
-        <annotation1:ieee18722015AxiomNumber>9.1.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.1.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -789,7 +788,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#PositionMeasure"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#PhysicalQuantity"/>
-        <annotation1:ieee18722015AxiomNumber>9.2.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#PositionMeasure"/>
@@ -798,7 +797,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
             <rdf:Description rdf:about="http://purl.org/rtask/pos#PositionPoint"/>
             <rdf:Description rdf:about="http://purl.org/rtask/pos#PositionRegion"/>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>9.2.5</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.5</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -812,7 +811,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#PositionPoint"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PositionMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.3.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.3.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -845,7 +844,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#PositionSpatialOperator"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Function"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.6</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.6</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -859,7 +858,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#PositionTransformationFunction"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#UnaryFunction"/>
-        <annotation1:ieee18722015AxiomNumber>9.4.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.4.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -873,7 +872,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#QuantPoseTransformationFunction"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#UnaryFunction"/>
-        <annotation1:ieee18722015AxiomNumber>9.12.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.12.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -887,7 +886,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#QuantitativePose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-        <annotation1:ieee18722015AxiomNumber>9.11.13</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.11.13</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1295,7 +1294,7 @@ If the full axiomation is important to you, check the fully axiomatized verion o
             <rdf:Description rdf:about="http://purl.org/rtask/pos#OrientationRegion"/>
             <rdf:Description rdf:about="http://purl.org/rtask/pos#OrientationValue"/>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>9.7.5</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.5</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1410,13 +1409,13 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#extensionPos"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#SingleValuedRelation"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.17</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.17</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#extensionPos"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#TernaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.16</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.16</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1430,7 +1429,7 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#mapsOCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#TernaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.9.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.9.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1444,7 +1443,7 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#mapsPCS"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#TernaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.4.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.4.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1459,13 +1458,13 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#oCompose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#SingleValuedRelation"/>
-        <annotation1:ieee18722015AxiomNumber>9.9.8</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.9.8</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#oCompose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#TernaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.9.9</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.9.9</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1480,13 +1479,13 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#oRGenerated"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#SingleValuedRelation"/>
-        <annotation1:ieee18722015AxiomNumber>9.10.7</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.10.7</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#oRGenerated"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#TernaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.10.8</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.10.8</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1501,13 +1500,13 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#pCompose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#SingleValuedRelation"/>
-        <annotation1:ieee18722015AxiomNumber>9.4.8</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.4.8</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#pCompose"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#TernaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.4.9</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.4.9</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1522,13 +1521,13 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#pGenerated"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#QuaternaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.8</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.8</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#pGenerated"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#SingleValuedRelation"/>
-        <annotation1:ieee18722015AxiomNumber>9.5.7</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.5.7</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1542,7 +1541,7 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#relOrientation"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#TernaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.7.11</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.7.11</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -1556,7 +1555,7 @@ In order to retrieve the types of the arguments and output of the function, you 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/pos#relPosition"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#type"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#TernaryPredicate"/>
-        <annotation1:ieee18722015AxiomNumber>9.2.12</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>9.2.12</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <rdf:Description>
         <owl:qualifiedCardinality rdf:datatype="http://www.w3.org/2001/XMLSchema#nonNegativeInteger">1</owl:qualifiedCardinality>

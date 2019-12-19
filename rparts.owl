@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ieee1872-owl/rparts#"
-     xml:base="http://purl.org/ieee1872-owl/rparts"
+<rdf:RDF xmlns="http://purl.org/rtask/rparts#"
+     xml:base="http://purl.org/rtask/rparts"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
@@ -9,8 +9,7 @@
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
      xmlns:cora-bare="http://purl.org/rtask/cora-bare#"
      xmlns:sumo-cora="http://purl.org/rtask/sumo-cora#"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
-     xmlns:annotation1="http://purl.org/rtask/annotation#">
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/rtask/rparts">
         <owl:imports rdf:resource="http://purl.org/rtask/cora"/>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
@@ -24,6 +23,25 @@ The OWL implementation is an underspecified version of the SUO-KIF implementatio
 
 Concept definitions in natural language and othe clarifications can be found in the  IEEE 1872-2015 standard.</rdfs:comment>
     </owl:Ontology>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Annotation properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/rtask/rparts#robotProcessingPart -->
+
+    <owl:AnnotationProperty rdf:about="http://purl.org/rtask/rparts#robotProcessingPart">
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
+    </owl:AnnotationProperty>
     
 
 
@@ -63,7 +81,6 @@ Concept definitions in natural language and othe clarifications can be found in 
     <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#robotProcessingPart">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora-bare#robotPart"/>
         <rdfs:domain rdf:resource="http://purl.org/rtask/corax#ProcessingDevice"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
     </owl:ObjectProperty>
     
 

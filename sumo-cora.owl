@@ -1,12 +1,13 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ieee1872-owl/sumo-cora#"
-     xml:base="http://purl.org/ieee1872-owl/sumo-cora"
+<rdf:RDF xmlns="http://purl.org/rtask/sumo-cora#"
+     xml:base="http://purl.org/rtask/sumo-cora"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:sumo-cora="http://purl.org/rtask/sumo-cora#"
      xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/rtask/sumo-cora">
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>

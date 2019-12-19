@@ -1,16 +1,16 @@
 <?xml version="1.0"?>
-<rdf:RDF xmlns="http://purl.org/ieee1872-owl/cora#"
-     xml:base="http://purl.org/ieee1872-owl/cora"
+<rdf:RDF xmlns="http://purl.org/rtask/cora#"
+     xml:base="http://purl.org/rtask/cora"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:rparts="http://purl.org/rtask/rparts#"
      xmlns:cora-bare="http://purl.org/rtask/cora-bare#"
      xmlns:sumo-cora="http://purl.org/rtask/sumo-cora#"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
-     xmlns:annotation1="http://purl.org/rtask/annotation#">
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/rtask/cora">
         <owl:imports rdf:resource="http://purl.org/rtask/cora-bare"/>
         <owl:imports rdf:resource="http://purl.org/rtask/corax"/>
@@ -44,13 +44,13 @@ Concept definitions in natural language and othe clarifications can be found in 
     <!-- http://purl.org/rtask/cora-bare#agentRobot -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/rtask/cora-bare#agentRobot">
-        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#agent"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
     </owl:AnnotationProperty>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#agentRobot"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
-        <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#agent"/>
-        <annotation1:ieee18722015AxiomNumber>7.4.1</annotation1:ieee18722015AxiomNumber>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
+        <rdfs:comment>7.4.3</rdfs:comment>
     </owl:Axiom>
     
 
@@ -64,7 +64,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#support"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/ieee1872-owl/sumo-cora#Device"/>
-        <annotation1:ieee18722015AxiomNumber>7.6.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.6.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -89,13 +89,13 @@ Concept definitions in natural language and othe clarifications can be found in 
     <!-- http://purl.org/rtask/cora-bare#agentRobot -->
 
     <rdf:Description rdf:about="http://purl.org/rtask/cora-bare#agentRobot">
-        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#agent"/>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#agentRobot"/>
-        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#range"/>
-        <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Process"/>
-        <rdfs:comment>7.4.3</rdfs:comment>
+        <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
+        <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#agent"/>
+        <annotation:ieee18722015AxiomNumber>7.4.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -110,13 +110,13 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#robotPart"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subPropertyOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#part"/>
-        <annotation1:ieee18722015AxiomNumber>7.2.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.2.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#robotPart"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#domain"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
-        <annotation1:ieee18722015AxiomNumber>7.2.2</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.2.2</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -141,7 +141,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#CollectiveRoboticSystem"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
-        <annotation1:ieee18722015AxiomNumber>7.8.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.8.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -170,7 +170,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#RobotGroup"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
-        <annotation1:ieee18722015AxiomNumber>7.5.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.5.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -184,7 +184,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#RobotInterface"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
-        <annotation1:ieee18722015AxiomNumber>7.3.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.3.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -198,7 +198,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#RoboticEnvironment"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/corax#PhysicalEnvironment"/>
-        <annotation1:ieee18722015AxiomNumber>7.7.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.7.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -227,13 +227,13 @@ Concept definitions in natural language and othe clarifications can be found in 
                 </owl:unionOf>
             </owl:Class>
         </owl:annotatedTarget>
-        <annotation1:ieee18722015AxiomNumber>7.8.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.8.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#RoboticSystem"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2000/01/rdf-schema#subClassOf"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/corax#ArtificialSystem"/>
-        <annotation1:ieee18722015AxiomNumber>7.6.1</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.6.1</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
     
 
@@ -245,7 +245,7 @@ Concept definitions in natural language and othe clarifications can be found in 
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#CollectiveRoboticSystem"/>
         <owl:annotatedProperty rdf:resource="http://www.w3.org/2002/07/owl#disjointWith"/>
         <owl:annotatedTarget rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
-        <annotation1:ieee18722015AxiomNumber>7.8.3</annotation1:ieee18722015AxiomNumber>
+        <annotation:ieee18722015AxiomNumber>7.8.3</annotation:ieee18722015AxiomNumber>
     </owl:Axiom>
 </rdf:RDF>
 
