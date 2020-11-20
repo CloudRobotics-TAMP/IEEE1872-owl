@@ -41,6 +41,7 @@ Concept definitions in natural language and othe clarifications can be found in 
 
     <owl:AnnotationProperty rdf:about="http://purl.org/rtask/rparts#robotProcessingPart">
         <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/corax#ProcessingDevice"/>
     </owl:AnnotationProperty>
     
 
@@ -71,7 +72,6 @@ Concept definitions in natural language and othe clarifications can be found in 
     <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#robotCommunicatingPart">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora-bare#robotPart"/>
         <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
     </owl:ObjectProperty>
     
 
@@ -80,7 +80,6 @@ Concept definitions in natural language and othe clarifications can be found in 
 
     <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#robotProcessingPart">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora-bare#robotPart"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/corax#ProcessingDevice"/>
     </owl:ObjectProperty>
     
 
@@ -90,205 +89,7 @@ Concept definitions in natural language and othe clarifications can be found in 
     <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#robotSensingPart">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora-bare#robotPart"/>
         <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
     </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/rtask/rparts#gripper_frame_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#gripper_frame_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#gripper_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#gripper_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#gripper_move_group -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#gripper_move_group">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#gripper_name -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#gripper_name">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#gripper_payload -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#gripper_payload">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#gripper_robot_fixed_frame_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#gripper_robot_fixed_frame_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#joint_effort_limit -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#joint_effort_limit">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Joint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#joint_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#joint_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Joint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#joint_is_actuated -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#joint_is_actuated">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Joint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#boolean"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#joint_lower_limit -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#joint_lower_limit">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Joint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#joint_name -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#joint_name">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Joint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#joint_type -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#joint_type">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Joint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#joint_upper_limit -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#joint_upper_limit">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Joint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#joint_velocity_limit -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#joint_velocity_limit">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Joint"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#robotActuatingPart -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#robotActuatingPart"/>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#robotCommunicatingPart -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#robotCommunicatingPart"/>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#robotProcessingPart -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#robotProcessingPart"/>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#robotSensingPart -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#robotSensingPart"/>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#robot_arm_reachability -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#robot_arm_reachability">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#robot_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#robot_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#robot_name -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#robot_name">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/rparts#robot_payload -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#robot_payload">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#double"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -331,20 +132,6 @@ Concept definitions in natural language and othe clarifications can be found in 
 
     <rdf:Description rdf:about="http://purl.org/rtask/sumo-cora#_TernaryPredicate">
         <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#_Predicate"/>
-    </rdf:Description>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Annotations
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    <rdf:Description rdf:about="http://purl.org/rtask/rparts#robotSensingPart">
-        <rdfs:comment>In IEEE 1872-2015, the domain of class is MeasuringDevice, which is not present in SUMO 1.52. That is probably a mistake in IEEE 1872-2015.</rdfs:comment>
     </rdf:Description>
 </rdf:RDF>
 

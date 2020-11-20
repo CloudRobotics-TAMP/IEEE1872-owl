@@ -16,9 +16,12 @@
         <owl:imports rdf:resource="http://purl.org/rtask/cap"/>
         <owl:imports rdf:resource="http://purl.org/rtask/cora"/>
         <owl:imports rdf:resource="http://purl.org/rtask/cora-bare"/>
+        <owl:imports rdf:resource="http://purl.org/rtask/corax"/>
         <owl:imports rdf:resource="http://purl.org/rtask/pos"/>
         <owl:imports rdf:resource="http://purl.org/rtask/rparts"/>
         <owl:imports rdf:resource="http://purl.org/rtask/sumo-cora"/>
+        <owl:imports rdf:resource="http://purl.org/rtask/action#"/>
+        <owl:imports rdf:resource="http://purl.org/rtask/task#"/>
         <dc:contributor>Elisa Tosello</dc:contributor>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
         <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
@@ -52,369 +55,6 @@ Concept definitions in natural language and othe clarifications can be found in 
     <!-- http://purl.org/dc/elements/1.1/creator -->
 
     <owl:AnnotationProperty rdf:about="http://purl.org/dc/elements/1.1/creator"/>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Object Properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/rtask/action#actionUpperTime -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#actionUpperTime">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Action"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#TimeMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#composes -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#composes">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Action"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Plan"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#from -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#from">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Move"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#hand -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#hand">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PickUp"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PutDown"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Stack"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Unstack"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#jointManipulationPosture -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#jointManipulationPosture">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PickUp"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PutDown"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Stack"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Unstack"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/pos#JointMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#jointManipulationPrePosture -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#jointManipulationPrePosture">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PickUp"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PutDown"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Stack"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Unstack"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/pos#JointMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#manipulationMilestonePose -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#manipulationMilestonePose">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PickUp"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Unstack"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#manipulationObject -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#manipulationObject">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PickUp"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PutDown"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Stack"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Unstack"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Object"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#manipulationOffset -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#manipulationOffset">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PickUp"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Unstack"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#manipulationReferencePose -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#manipulationReferencePose">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PickUp"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Unstack"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#preManipulationOffset -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#preManipulationOffset">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#PickUp"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/action#Unstack"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#to -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/action#to">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Action"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/pos#PoseMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#forms -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#forms">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/task#Mission"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#isAssignedTo -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#isAssignedTo">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#isSpecifiedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#isSpecifiedBy">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Plan"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#taskClassifiedBy -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#taskClassifiedBy">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/task#TaskType"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#taskUpperTime -->
-
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/task#taskUpperTime">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#TimeMeasure"/>
-    </owl:ObjectProperty>
-    
-
-
-    <!-- 
-    ///////////////////////////////////////////////////////////////////////////////////////
-    //
-    // Data properties
-    //
-    ///////////////////////////////////////////////////////////////////////////////////////
-     -->
-
-    
-
-
-    <!-- http://purl.org/rtask/action#action_description -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/action#action_description">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Action"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#action_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/action#action_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Action"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#action_name -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/action#action_name">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Action"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#action_priority -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/action#action_priority">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Action"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#action_type_description -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/action#action_type_description">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#ActionType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/action#action_type_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/action#action_type_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#ActionType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#mission_description -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#mission_description">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Mission"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#mission_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#mission_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Mission"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#mission_name -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#mission_name">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Mission"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#task_description -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_description">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#task_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#task_name -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_name">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#task_outcome -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_outcome">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range>
-            <rdfs:Datatype>
-                <owl:oneOf>
-                    <rdf:Description>
-                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                        <rdf:first>Completed</rdf:first>
-                        <rdf:rest>
-                            <rdf:Description>
-                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                <rdf:first>Error</rdf:first>
-                                <rdf:rest>
-                                    <rdf:Description>
-                                        <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                        <rdf:first>Running</rdf:first>
-                                        <rdf:rest>
-                                            <rdf:Description>
-                                                <rdf:type rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#List"/>
-                                                <rdf:first>To Run</rdf:first>
-                                                <rdf:rest rdf:resource="http://www.w3.org/1999/02/22-rdf-syntax-ns#nil"/>
-                                            </rdf:Description>
-                                        </rdf:rest>
-                                    </rdf:Description>
-                                </rdf:rest>
-                            </rdf:Description>
-                        </rdf:rest>
-                    </rdf:Description>
-                </owl:oneOf>
-            </rdfs:Datatype>
-        </rdfs:range>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#task_priority -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_priority">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#Task"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#task_type_description -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_type_description">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#TaskType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
-    </owl:DatatypeProperty>
-    
-
-
-    <!-- http://purl.org/rtask/task#task_type_id -->
-
-    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/task#task_type_id">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/task#TaskType"/>
-        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#int"/>
-    </owl:DatatypeProperty>
     
 
 
@@ -908,6 +548,54 @@ Concept definitions in natural language and othe clarifications can be found in 
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
+    
+
+
+    <!-- http://purl.org/rtask/rtask#GripperGroup -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/rtask#GripperGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rtask/rtask#Human -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/rtask#Human">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#CognitiveAgent"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rtask/rtask#HumanGroup -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/rtask#HumanGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rtask/rtask#Sensor -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/rtask#Sensor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rtask/rtask#SensorGroup -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/rtask#SensorGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rtask/rtask#Tool -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/rtask#Tool">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
+    </owl:Class>
     
 
 
