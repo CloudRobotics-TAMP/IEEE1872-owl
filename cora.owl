@@ -86,6 +86,136 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
+    <!-- http://purl.org/rtask/cora#collectiveSystemSinglePart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#collectiveSystemSinglePart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora#roboticSystemPart"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#CollectiveRoboticSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#crsSinglePart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#crsSinglePart">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#CollectiveRoboticSystem"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#robotExtraProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#robotExtraProperty">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#robotUniqueProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#robotUniqueProperty">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#roboticSystemPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#roboticSystemPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/sumo-cora#part"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#RoboticSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#sensorExtraProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#sensorExtraProperty">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora#Sensor"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#sensorUniqueProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#sensorUniqueProperty">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora#Sensor"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#srsExtraProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#srsExtraProperty">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#srsGrippingPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#srsGrippingPart">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#srsRoboticPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#srsRoboticPart">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#srsSensingPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#srsSensingPart">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora#Sensor"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#srsUses -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#srsUses">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Tool"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#systemRoboticPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#systemRoboticPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora#roboticSystemPart"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#RoboticSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#systemSensingPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cora#systemSensingPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora#roboticSystemPart"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora#Sensor"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#RoboticSystem"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/rtask/cora-bare#agentRobot -->
 
     <rdf:Description rdf:about="http://purl.org/rtask/cora-bare#agentRobot">
@@ -124,11 +254,75 @@ Concept definitions in natural language and othe clarifications can be found in 
     <!-- 
     ///////////////////////////////////////////////////////////////////////////////////////
     //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/rtask/cora#crsName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/cora#crsName">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#CollectiveRoboticSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#robotName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/cora#robotName">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#sensorName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/cora#sensorName">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora#Sensor"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/rtask/cora#srsName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/cora#srsName">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora-bare#SingleRoboticSystem"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
     // Classes
     //
     ///////////////////////////////////////////////////////////////////////////////////////
      -->
 
+    
+
+
+    <!-- http://purl.org/rtask/cora#Sensor -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/cora#Sensor">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rtask/cora#SensorGroup -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/cora#SensorGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
+    </owl:Class>
     
 
 
@@ -215,6 +409,7 @@ Concept definitions in natural language and othe clarifications can be found in 
             </owl:Class>
         </owl:equivalentClass>
         <rdfs:subClassOf rdf:resource="http://purl.org/rtask/corax#ArtificialSystem"/>
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
     </rdf:Description>
     <owl:Axiom>
         <owl:annotatedSource rdf:resource="http://purl.org/rtask/cora-bare#RoboticSystem"/>

@@ -21,6 +21,7 @@
         <owl:imports rdf:resource="http://purl.org/rtask/rparts"/>
         <owl:imports rdf:resource="http://purl.org/rtask/sumo-cora"/>
         <owl:imports rdf:resource="http://purl.org/rtask/action#"/>
+        <owl:imports rdf:resource="http://purl.org/rtask/cora-rparts-cap#"/>
         <owl:imports rdf:resource="http://purl.org/rtask/task#"/>
         <dc:contributor>Elisa Tosello</dc:contributor>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
@@ -548,54 +549,6 @@ Concept definitions in natural language and othe clarifications can be found in 
             </owl:Restriction>
         </rdfs:subClassOf>
     </rdf:Description>
-    
-
-
-    <!-- http://purl.org/rtask/rtask#GripperGroup -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/rtask#GripperGroup">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rtask/rtask#Human -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/rtask#Human">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#CognitiveAgent"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rtask/rtask#HumanGroup -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/rtask#HumanGroup">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rtask/rtask#Sensor -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/rtask#Sensor">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rtask/rtask#SensorGroup -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/rtask#SensorGroup">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rtask/rtask#Tool -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/rtask#Tool">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
-    </owl:Class>
     
 
 

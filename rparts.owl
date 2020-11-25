@@ -57,6 +57,24 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
+    <!-- http://purl.org/rtask/rparts#gripperExtraProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#gripperExtraProperty">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/rparts#gripperUniqueProperty -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#gripperUniqueProperty">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/rtask/rparts#robotActuatingPart -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#robotActuatingPart">
@@ -76,6 +94,16 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
+    <!-- http://purl.org/rtask/rparts#robotGrippingPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#robotGrippingPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora-bare#robotPart"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/rtask/rparts#robotProcessingPart -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#robotProcessingPart">
@@ -88,8 +116,39 @@ Concept definitions in natural language and othe clarifications can be found in 
 
     <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#robotSensingPart">
         <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora-bare#robotPart"/>
-        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cora#Sensor"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#Robot"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- http://purl.org/rtask/rparts#systemGrippingPart -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/rparts#systemGrippingPart">
+        <rdfs:subPropertyOf rdf:resource="http://purl.org/rtask/cora#roboticSystemPart"/>
+        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cora-bare#RoboticSystem"/>
+    </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/rtask/rparts#gripperName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/rparts#gripperName">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/rparts#Gripper"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
@@ -107,7 +166,16 @@ Concept definitions in natural language and othe clarifications can be found in 
     <!-- http://purl.org/rtask/rparts#Gripper -->
 
     <owl:Class rdf:about="http://purl.org/rtask/rparts#Gripper">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
         <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Device"/>
+    </owl:Class>
+    
+
+
+    <!-- http://purl.org/rtask/rparts#GripperGroup -->
+
+    <owl:Class rdf:about="http://purl.org/rtask/rparts#GripperGroup">
+        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
     </owl:Class>
     
 

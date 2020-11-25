@@ -69,11 +69,11 @@
     
 
 
-    <!-- http://purl.org/rtask/cap#hasBehavior -->
+    <!-- http://purl.org/rtask/cap#capabilityProperty -->
 
-    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cap#hasBehavior">
-        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
-        <rdfs:range rdf:resource="http://purl.org/rtask/cap#Behavior"/>
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cap#capabilityProperty">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Capability"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
     </owl:ObjectProperty>
     
 
@@ -87,12 +87,41 @@
     
 
 
+    <!-- http://purl.org/rtask/cap#toolCapability -->
+
+    <owl:ObjectProperty rdf:about="http://purl.org/rtask/cap#toolCapability">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Tool"/>
+        <rdfs:range rdf:resource="http://purl.org/rtask/cap#Capability"/>
+    </owl:ObjectProperty>
+    
+
+
     <!-- http://purl.org/rtask/cap#triggers -->
 
     <owl:ObjectProperty rdf:about="http://purl.org/rtask/cap#triggers">
         <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Behavior"/>
         <rdfs:range rdf:resource="http://purl.org/rtask/cap#ActionType"/>
     </owl:ObjectProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+    
+
+
+    <!-- http://purl.org/rtask/cap#capabilityName -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/cap#capabilityName">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Capability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
     
 
 
