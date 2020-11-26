@@ -2,15 +2,21 @@
 <rdf:RDF xmlns="http://purl.org/rtask/rtask#"
      xml:base="http://purl.org/rtask/rtask"
      xmlns:dc="http://purl.org/dc/elements/1.1/"
+     xmlns:cap="http://purl.org/rtask/cap#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:pos="http://purl.org/rtask/pos#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:cora="http://purl.org/rtask/cora#"
      xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:corax="http://purl.org/rtask/corax#"
+     xmlns:action="http://purl.org/rtask/action#"
      xmlns:rparts="http://purl.org/rtask/rparts#"
      xmlns:cora-bare="http://purl.org/rtask/cora-bare#"
      xmlns:sumo-cora="http://purl.org/rtask/sumo-cora#"
-     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
+     xmlns:annotation="http://purl.org/ieee1872-owl/annotation#"
+     xmlns:cora-rparts-cap="http://purl.org/rtask/cora-rparts-cap#">
     <owl:Ontology rdf:about="http://purl.org/rtask/rtask#">
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/annotation"/>
         <owl:imports rdf:resource="http://purl.org/rtask/cap"/>
@@ -24,20 +30,12 @@
         <owl:imports rdf:resource="http://purl.org/rtask/cora-rparts-cap#"/>
         <owl:imports rdf:resource="http://purl.org/rtask/task#"/>
         <dc:contributor>Elisa Tosello</dc:contributor>
-        <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
-        <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
         <dc:creator>Elisa Tosello</dc:creator>
         <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
 
 The ontologies in IEEE1872-owl are CC-BY-4.0 (https://creativecommons.org/licenses/by/4.0/)</dc:rights>
-        <rdfs:comment>This is the OWL version of the ACTION ontology</rdfs:comment>
-        <rdfs:comment>This is the OWL version of the TASK ontology</rdfs:comment>
-        <rdfs:comment xml:lang="en">This is the fully axiomatized OWL implementation of the ontologies IEEE 1872-2015. It only includes all concepts and properties defined in the standard, as well as all axioms that we were capable of translating to OWL. 
-
-The OWL implementation is an underspecified version of the SUO-KIF implementation in IEEE 1872-2015. That is, the set of allowed models of the SUO-KIF implementation is a proper subset of the allowed models by the OWL implementation.
-
-Concept definitions in natural language and othe clarifications can be found in the  IEEE 1872-2015 standard.</rdfs:comment>
-        <rdfs:seeAlso>https://github.com/srfiorini/IEEE1872-owl</rdfs:seeAlso>
+        <rdfs:comment xml:lang="en">This is the OWL version of the RTASK ontology. It extends the fully axiomatized OWL implementation of the ontologies IEEE 1872-2015 to include all concepts and properties defined in the standard, concepts and properties useful to define a robotic action, capability, and task, as well as all axioms capable of translating to OWL.</rdfs:comment>
+        <rdfs:seeAlso>https://github.com/CloudRobotics-TAMP/IEEE1872-owl.git</rdfs:seeAlso>
     </owl:Ontology>
     
 

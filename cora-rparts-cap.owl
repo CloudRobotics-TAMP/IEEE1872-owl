@@ -15,6 +15,8 @@
         <owl:imports rdf:resource="http://purl.org/ieee1872-owl/rparts"/>
         <owl:imports rdf:resource="http://purl.org/rtask/cap"/>
         <owl:imports rdf:resource="http://purl.org/rtask/cora"/>
+        <dc:contributor>Elisa Tosello</dc:contributor>
+        <dc:creator>Elisa Tosello</dc:creator>
     </owl:Ontology>
     
 

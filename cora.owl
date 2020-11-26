@@ -16,6 +16,7 @@
         <owl:imports rdf:resource="http://purl.org/rtask/corax"/>
         <owl:imports rdf:resource="http://purl.org/rtask/rparts"/>
         <owl:imports rdf:resource="http://purl.org/rtask/sumo-cora"/>
+        <dc:contributor>Elisa Tosello</dc:contributor>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
         <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
         <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.

@@ -10,6 +10,7 @@
      xmlns:sumo-cora="http://purl.org/rtask/sumo-cora#"
      xmlns:annotation="http://purl.org/ieee1872-owl/annotation#">
     <owl:Ontology rdf:about="http://purl.org/rtask/sumo-cora">
+        <dc:contributor>Elisa Tosello</dc:contributor>
         <dc:contributor xml:lang="en">Sandro Rama Fiorini</dc:contributor>
         <dc:contributor xml:lang="en">Vitor Fortes Rey</dc:contributor>
         <dc:rights xml:lang="en">IEEE 1872-2015 copyright is property of IEEE Standards Association.
