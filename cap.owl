@@ -116,6 +116,15 @@
     
 
 
+    <!-- http://purl.org/rtask/cap#capabilityId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/cap#capabilityId">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/cap#Capability"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/rtask/cap#capabilityName -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/rtask/cap#capabilityName">

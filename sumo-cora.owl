@@ -327,6 +327,15 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
+    <!-- http://purl.org/rtask/sumo-cora#agentGroupId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#agentGroupId">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Group"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/rtask/sumo-cora#agentGroupName -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#agentGroupName">
@@ -336,11 +345,29 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
+    <!-- http://purl.org/rtask/sumo-cora#agentId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#agentId">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/rtask/sumo-cora#agentName -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#agentName">
         <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Agent"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/rtask/sumo-cora#agentStatusId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#agentStatusId">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#AgentStatus"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
 
@@ -391,11 +418,29 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
+    <!-- http://purl.org/rtask/sumo-cora#humanId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#humanId">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Human"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
+    </owl:DatatypeProperty>
+    
+
+
     <!-- http://purl.org/rtask/sumo-cora#humanName -->
 
     <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#humanName">
         <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Human"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/rtask/sumo-cora#propertyId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#propertyId">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
 
@@ -414,6 +459,15 @@ Concept definitions in natural language and othe clarifications can be found in 
     <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#propertyValue">
         <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Property"/>
         <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#Variant"/>
+    </owl:DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/rtask/sumo-cora#toolId -->
+
+    <owl:DatatypeProperty rdf:about="http://purl.org/rtask/sumo-cora#toolId">
+        <rdfs:domain rdf:resource="http://purl.org/rtask/sumo-cora#Tool"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#unsignedInt"/>
     </owl:DatatypeProperty>
     
 
@@ -518,14 +572,6 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
-    <!-- http://purl.org/rtask/sumo-cora#ContentBearingPhysical -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#ContentBearingPhysical">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Physical"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rtask/sumo-cora#CorpuscularObject -->
 
     <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#CorpuscularObject">
@@ -609,14 +655,6 @@ Concept definitions in natural language and othe clarifications can be found in 
     
 
 
-    <!-- http://purl.org/rtask/sumo-cora#Icon -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Icon">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#ContentBearingPhysical"/>
-    </owl:Class>
-    
-
-
     <!-- http://purl.org/rtask/sumo-cora#IntentionalProcess -->
 
     <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#IntentionalProcess">
@@ -652,14 +690,6 @@ Concept definitions in natural language and othe clarifications can be found in 
                 </owl:intersectionOf>
             </owl:Class>
         </rdfs:subClassOf>
-    </owl:Class>
-    
-
-
-    <!-- http://purl.org/rtask/sumo-cora#Map -->
-
-    <owl:Class rdf:about="http://purl.org/rtask/sumo-cora#Map">
-        <rdfs:subClassOf rdf:resource="http://purl.org/rtask/sumo-cora#Icon"/>
     </owl:Class>
     
 
